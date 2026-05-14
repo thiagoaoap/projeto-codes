@@ -115,17 +115,6 @@ body {
     font-weight: 700;
 }
 
-.figura-post {
-    width: 38%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.figura-post a {
-    display: block;
-}
-
 .foto-comida {
     width: 100%;
     border-radius: 0.5rem;
