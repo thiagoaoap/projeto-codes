@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
         <title>Treview</title>
     </head>
     <body>
-        Seguindos
+        <header class="header">
+            <a href="pesquisa_loc.html" class="localizacao">
+                <img src="img/localizacao.png" alt="ícone de localização">
+                <h1>Rio de Janeiro, RJ</h1>
+            </a>
+            <a href="pesquisa.html" class="lupa">
+                <img src="img/lupa.png" alt="pesquisar">
+            </a>
+            <nav class="abas">
+                <ul>
+                    <li><a href="index.html">Para Você</a></li>
+                    <li><a href="amigos.html">Amigos</a></li>
+                    <li><a href="seguindo.html" class="aba-ativa">Seguindo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="feed">
+            <ul class="lista-posts">
+                <li class="post">
+                    <a href="perfil.html" class="autor">
+                        <img src="img/pfp_desconhecido.png" alt="foto de perfil" class="pfp">
+                        <p>joao.silva</p>
+                    </a>
+                    <a href="pagina_restaurante.html" class="link-foto">
+                        <img src="img/pizza.jpg" alt="foto da comida" class="foto-comida">
+                    </a>
+                    <a href="pagina_restaurante.html" class="info-restaurante">
+                        <h2>Sabor da Casa</h2>
+                        <p>O melhor restaurante custo-benefício da região!</p>
+                        <p class="preco">Por pessoa: R$45</p>
+                    </a>
+                    <p class="estrelas">★★★☆☆</p>
+                    <p class="curtidas">
+                        120
+                        <img src="img/coracao.png" alt="curtidas">
+                    </p>
+                </li>
+                <li class="post">
+                    <a href="perfil.html" class="autor">
+                        <img src="img/pfp_desconhecido.png" alt="foto de perfil" class="pfp">
+                        <p>maria_oliveira</p>
+                    </a>
+                    <a href="pagina_restaurante.html" class="link-foto">
+                        <img src="img/pizza.jpg" alt="foto da comida" class="foto-comida">
+                    </a>
+                    <a href="pagina_restaurante.html" class="info-restaurante">
+                        <h2>Delícias do Chef</h2>
+                        <p>O melhor restaurante custo-benefício da região!</p>
+                        <p class="preco">Por pessoa: R$35</p>
+                    </a>
+                    <p class="estrelas">★★★☆☆</p>
+                    <p class="curtidas">
+                        100
+                        <img src="img/coracao.png" alt="curtidas">
+                    </p>
+                </li>
+                <li class="post">
+                    <a href="perfil.html" class="autor">
+                        <img src="img/pfp_desconhecido.png" alt="foto de perfil" class="pfp">
+                        <p>pedro.santos</p>
+                    </a>
+                    <a href="pagina_restaurante.html" class="link-foto">
+                        <img src="img/pizza.jpg" alt="foto da comida" class="foto-comida">
+                    </a>
+                    <a href="pagina_restaurante.html" class="info-restaurante">
+                        <h2>Tempero & Cia</h2>
+                        <p>O melhor restaurante custo-benefício da região!</p>
+                        <p class="preco">Por pessoa: R$60</p>
+                    </a>
+                    <p class="estrelas">★★★☆☆</p>
+                    <p class="curtidas">
+                        80
+                        <img src="img/coracao.png" alt="curtidas">
+                    </p>
+                </li>
+            </ul>
+        </main>
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="img/home-sel.png" alt="home">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/comunidade.png" alt="comunidade">
+                    </a>
+                </li>
+                <li>
+                    <a href="post.html">
+                        <img src="img/post.png" alt="criar avaliação">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/chat.png" alt="bate-papo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/perfil.png" alt="perfil">
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </body>
 </html>
