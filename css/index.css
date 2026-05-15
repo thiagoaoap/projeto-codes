@@ -94,11 +94,25 @@ body {
     box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.autor {
+.post-cabecalho {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 0.5rem;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nome-restaurante-post {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
 }
 
 .pfp {
