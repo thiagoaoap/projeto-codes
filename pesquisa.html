@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treview</title>
-</head>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/pesquisa.css">
+        <title>Treview</title>
+    </head>
     <body>
-        <header>
-            <a href="index.html">
+        <header class="header">
+            <a href="index.html" class="voltar">
                 <img src="img/voltar.png" alt="voltar">
             </a>
-            <input type="search" placeholder="Procurar...">
-            <select>
-                <option>Avaliações</option>
-                <option>Restaurantes</option>
-                <option>Perfis</option>
-            </select>
-            <a href="filtros.html">
-                <img src="img/filtros.png" alt="filtros">
+            <input type="search" placeholder="Procurar..." class="busca">
+            <a href="#" class="lupa">
+                <img src="img/lupa.png" alt="pesquisar">
             </a>
         </header>
-        <main>
-            <ul>
-                <li><a href="#">Resultado 1</a></li>
-                <li><a href="#">Resultado 2</a></li>
-                <li><a href="#">Resultado 3</a></li>
+        <main class="conteudo">
+            <section class="filtros">
+                <label class="ordenar">
+                    Procurar:
+                    <select>
+                        <option>Localizações</option>
+                        <option>Restaurantes</option>
+                        <option>Perfis</option>
+                    </select>
+                </label>
+                <label class="ordenar">
+                    Ordenar por:
+                    <select>
+                        <option>Relevância</option>
+                        <option>Popularidade</option>
+                    </select>
+                </label>
+            </section>
+            <ul class="resultados">
+                <li><a href="index.html">São Paulo, SP, Brasil</a></li>
+                <li><a href="index.html">Rio de Janeiro, RJ, Brasil</a></li>
+                <li><a href="index.html">Belo Horizonte, MG, Brasil</a></li>
             </ul>
         </main>
-        <footer>
+        <footer class="footer">
             <ul>
                 <li>
                     <a href="index.html">
