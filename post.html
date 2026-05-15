@@ -1,50 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treview</title>
-</head>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/post.css">
+        <title>Treview</title>
+    </head>
     <body>
-        <header>
-            <a href="index.html">
+        <header class="header">
+            <a href="index.html" class="voltar">
                 <img src="img/voltar.png" alt="voltar">
             </a>
-            <h1>Criar avaliação</h1>
+            <h1>Avaliar</h1>
         </header>
-        <main>
-            <ul>
-                <li>
-                    Nome do restaurante:
-                    <input type="search" placeholder="Procurar">
-                </li>
-                <li>
-                    Endereço:
-                    <input type="search" placeholder="Preenchimento automático">
-                </li>
-                <li>
-                    Nota comida: 0/10
-                    ☆☆☆☆☆☆☆☆☆☆
-                </li>
-                <li>
-                    Nota serviço: 0/10
-                    ☆☆☆☆☆☆☆☆☆☆
-                </li>
-                <li>
-                    Preço pago por pessoa:
-                    <input type="range">
-                </li>
-                <li>
-                    <input type="text" placeholder="Conte sua experiência">
-                </li>
-                <li>
-                    Adicione uma foto:
-                    <input type="file">
-                </li>
-            </ul>
-            <button>Postar</button>
+        <main class="conteudo">
+            <form class="formulario">
+                <ul class="campos">
+                    <li class="campo">
+                        <label class="campo-linha">
+                            Restaurante:
+                            <input type="search" placeholder="Pesquisar..." class="entrada">
+                        </label>
+                    </li>
+                    <li class="campo">
+                        <label class="campo-linha">
+                            Local:
+                            <input type="search" placeholder="Preenchimento automatico" class="entrada">
+                        </label>
+                    </li>
+                    <li class="campo">
+                        <p class="rotulo">Preço:</p>
+                        <input type="text" placeholder="Min" class="entrada-preco">
+                        <p class="separador">—</p>
+                        <input type="text" placeholder="Max" class="entrada-preco">
+                    </li>
+                    <li class="campo">
+                        <p class="rotulo">Nota:</p>
+                        <p class="estrelas">☆☆☆☆☆</p>
+                    </li>
+                    <li class="campo">
+                        <textarea placeholder="Conte sua experiencia..." class="experiencia"></textarea>
+                    </li>
+                    <li class="campo">
+                        <label class="area-foto">
+                            <img src="img/camera.png" alt="câmera">
+                            <p>ADICIONE SUAS FOTOS</p>
+                            <input type="file" class="foto-input">
+                        </label>
+                    </li>
+                </ul>
+                <button type="submit" class="publicar">PUBLICAR</button>
+            </form>
         </main>
-        <footer>
+        <footer class="footer">
             <ul>
                 <li>
                     <a href="index.html">
@@ -58,7 +70,7 @@
                 </li>
                 <li>
                     <a href="post.html">
-                        <img src="img/post.png" alt="criar avaliação">
+                        <img src="img/post-sel.png" alt="criar avaliação">
                     </a>
                 </li>
                 <li>
