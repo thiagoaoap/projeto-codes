@@ -1,0 +1,217 @@
+html {
+    background-color: #f2f2f2;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f2f2f2;
+    color: #000000;
+    max-width: 30rem;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #B02A37;
+    color: #ffffff;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.voltar img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.conteudo {
+    padding: 5rem 1rem 5rem 1rem;
+}
+
+.resumo {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.info h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.estrelas {
+    color: #FFC300;
+    font-size: 1.25rem;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+.acoes a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    text-align: center;
+    width: 5rem;
+}
+
+.acoes img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.avaliacoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.avaliacoes h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.ordenar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.ordenar select {
+    background-color: #ffffff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-family: "Inter", sans-serif;
+    border: 0.0625rem solid #D9D9D9;
+}
+
+.lista-posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    row-gap: 0.75rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.autor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pfp {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.autor p {
+    font-weight: 700;
+}
+
+.foto-comida {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.info-restaurante {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #000000;
+}
+
+.info-restaurante h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.preco {
+    margin-top: 0.25rem;
+}
+
+.curtidas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.curtidas img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 30rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-top: 0.0625rem solid #D9D9D9;
+    padding: 0.75rem 0;
+    z-index: 10;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer img {
+    width: 2rem;
+    height: 2rem;
+}

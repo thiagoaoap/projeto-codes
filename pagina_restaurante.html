@@ -1,56 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treview</title>
-</head>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/pagina_restaurante.css">
+        <title>Treview</title>
+    </head>
     <body>
-        <header>
-            <a href="index.html">
+        <header class="header">
+            <a href="index.html" class="voltar">
                 <img src="img/voltar.png" alt="voltar">
             </a>
-            <h1>Nome do Restaurante</h1>
+            <h1>PF do seu Zé</h1>
         </header>
-        <section>
-            <ul>
-                <li>
-                    Endereço, 123
-                </li>
-                <li>
-                    Nota comida: 6/10
-                    ★★★★★★☆☆☆☆
-                </li>
-                <li>
-                    Nota serviço: 8/10
-                    ★★★★★★★★☆☆
-                </li>
-                <li>
-                    Preço médio por pessoa: R$90 - 120
-                </li>
-            </ul>
-            <ul>
-                <li><button>Mapa</button></li>
-                <li><button>Menu</button></li>
-                <li><button>Fotos</button></li>
-            </ul>
-        </section>
-        <main>
-            <h2>Avaliações</h2>
-            <ul>
-                <li>
-                    <img src="img/pfp_desconhecido.png" alt="foto de perfil"> nome_do_perfil
-                    <img src="img/pizza.jpg" alt="foto da comida">
-                    <p>Resumo da avaliação</p>
-                    <img src="img/coracao.png" alt="likes"> Numero de likes
-                </li>
-                <li>
-                    <img src="img/pfp_desconhecido.png" alt="foto de perfil"> nome_do_perfil
-                    <img src="img/pizza.jpg" alt="foto da comida">
-                    <p>Resumo da avaliação</p>
-                    <img src="img/coracao.png" alt="likes"> Numero de likes
-                </li>
-            </ul>
+        <main class="conteudo">
+            <section class="resumo">
+                <ul class="info">
+                    <li>
+                        <h2>Endereço:</h2>
+                        <p>Rua Uberabinha, 123</p>
+                    </li>
+                    <li>
+                        <p>Comida: 6/10</p>
+                        <p class="estrelas">★★★★★★☆☆☆☆</p>
+                    </li>
+                    <li>
+                        <p>Serviço: 8/10</p>
+                        <p class="estrelas">★★★★★★★★☆☆</p>
+                    </li>
+                    <li>
+                        <p>Custo-benefício: 8/10</p>
+                        <p class="estrelas">★★★★★★★★☆☆</p>
+                    </li>
+                </ul>
+                <ul class="acoes">
+                    <li>
+                        <a href="#">
+                            <img src="img/mapa.png" alt="mapa">
+                            <p>Abrir no mapa</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/cardapio.png" alt="cardápio">
+                            <p>Cardápio</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/galeria.png" alt="galeria">
+                            <p>Ver galeria</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="avaliacoes">
+                <h2>Avaliações</h2>
+                <label class="ordenar">
+                    Ordenar por:
+                    <select>
+                        <option>Curtidas</option>
+                        <option>Relevância</option>
+                        <option>Maior nota</option>
+                        <option>Menor nota</option>
+                    </select>
+                </label>
+                <ul class="lista-posts">
+                    <li class="post">
+                        <a href="perfil.html" class="autor">
+                            <img src="img/pfp_desconhecido.png" alt="foto de perfil" class="pfp">
+                            <p>roberto_foodie</p>
+                        </a>
+                        <a href="#" class="link-foto">
+                            <img src="img/pizza.jpg" alt="foto da comida" class="foto-comida">
+                        </a>
+                        <a href="#" class="info-restaurante">
+                            <h2>PF do seu Zé</h2>
+                            <p>O melhor restaurante custo-benefício da região!</p>
+                            <p class="preco">Por pessoa: R$35</p>
+                        </a>
+                        <p class="estrelas">★★★☆☆</p>
+                        <p class="curtidas">
+                            120
+                            <img src="img/coracao.png" alt="curtidas">
+                        </p>
+                    </li>
+                    <li class="post">
+                        <a href="perfil.html" class="autor">
+                            <img src="img/pfp_desconhecido.png" alt="foto de perfil" class="pfp">
+                            <p>fernando_soares</p>
+                        </a>
+                        <a href="#" class="link-foto">
+                            <img src="img/churras.jpg" alt="foto da comida" class="foto-comida">
+                        </a>
+                        <a href="#" class="info-restaurante">
+                            <h2>PF do seu Zé</h2>
+                            <p>O melhor restaurante custo-benefício da região!</p>
+                            <p class="preco">Por pessoa: R$40</p>
+                        </a>
+                        <p class="estrelas">★★★★☆</p>
+                        <p class="curtidas">
+                            85
+                            <img src="img/coracao.png" alt="curtidas">
+                        </p>
+                    </li>
+                </ul>
+            </section>
         </main>
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="img/home.png" alt="home">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/comunidade.png" alt="comunidade">
+                    </a>
+                </li>
+                <li>
+                    <a href="post.html">
+                        <img src="img/post.png" alt="criar avaliação">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/chat.png" alt="bate-papo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/perfil.png" alt="perfil">
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </body>
 </html>
